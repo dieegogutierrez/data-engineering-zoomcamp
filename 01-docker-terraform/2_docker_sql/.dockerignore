@@ -1,0 +1,16 @@
+.env
+.gitignore
+Dockerfile*
+docker-compose.yaml
+*ipynb
+*parquet
+.git/
+.idea/
+.vscode/
+**/.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+ny_taxi_postgres_data/
+data_pgadmin/
+*.gz
+*.csv
