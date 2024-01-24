@@ -62,3 +62,25 @@ Continue [here](./terraform): `week_1_basics_n_setup/1_terraform_gcp/terraform`
 
 ### References
 https://learn.hashicorp.com/collections/terraform/gcp-get-started
+
+### Personal notes
+
+#### Create main.tf as explained on 2_gcp_overview
+- After setting up the service account and register with cloud credentials, type in terminal:
+```bash
+terraform init
+```
+- After setting up the bucket storage:
+```bash
+terraform plan
+```
+- After plan you deploy it:
+```bash
+terraform apply
+```
+- Removes your stack from the Cloud:
+```bash
+terraform destroy
+```
+#### Create variables.tf
+- Include all variables and change in main.tf to var."name_of_variable"
