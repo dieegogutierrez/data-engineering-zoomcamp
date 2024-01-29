@@ -54,7 +54,7 @@ Continue [here](./terraform): `week_1_basics_n_setup/1_terraform_gcp/terraform`
 - Go to IAM & Admin>service accounts and set up a service account
 - Grant service account access to project: Cloud storage>Storage Admin, BigQuery>BigQuery Admin
 - After created if needed to add a different service, go to IAM and edit the service account. Compute engine>compute admin
-- Adding permisions to use the service account, still in IAM on actions, choose Manage Keys>ADD KEY>Create new key>JSON
+- Adding permisions to use the service account, still in IAM/service accounts on actions, choose Manage Keys>ADD KEY>Create new key>JSON
 - Google Terraform google provider>Use provider, copy and paste in main.tf
 - Credentials can be inserted in main.tf or using:
 ```bash
