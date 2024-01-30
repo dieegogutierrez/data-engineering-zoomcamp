@@ -81,7 +81,7 @@ def test_output(output, *args) -> None:
     - `trip_distance` is greater than 0
 
 ```python
-  import inflection
+import inflection
 
 if 'transformer' not in globals():
     from mage_ai.data_preparation.decorators import transformer
@@ -111,8 +111,8 @@ def transform(data, *args, **kwargs):
 @test
 def test_output(output, *args):
     assert 'vendor_id' in output.columns, "There is no column named vendor_id"
-    assert output["passenger_count"].isin([0]).sum() == 0, 'There are rides with zero passengers'
-    assert output["trip_distance"].isin([0]).sum() == 0, 'There are rides with zero distance'
+    assert (output["passenger_count"] > 0).all(), 'There are rides with zero passengers or less'
+    assert (output["trip_distance"] > 0).all(), 'There are rides with zero distance or less'
 ```
 - Using a Postgres data exporter (SQL or Python), write the dataset to a table called `green_taxi` in a schema `mage`. Replace the table if it already exists.
 
