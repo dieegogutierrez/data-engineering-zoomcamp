@@ -76,10 +76,11 @@ WHERE
 - 15859
 - 89009
 
-## Question 4. Largest trip for each day
+## Question 4. Longest trip for each day
 
-Which was the pick up day with the largest trip distance
+Which was the pick up day with the longest trip distance?
 Use the pick up time for your calculations.
+Tip: For every trip on a single day, we only care about the trip with the longest distance. 
 
 ```sql
 SELECT 
@@ -91,6 +92,7 @@ ORDER BY
 LIMIT
 	1
 ```
+
 
 - 2019-09-18
 - 2019-09-16

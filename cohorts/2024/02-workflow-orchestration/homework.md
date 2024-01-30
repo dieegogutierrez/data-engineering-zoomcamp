@@ -2,8 +2,11 @@
 
 > In case you don't get one option exactly, select the closest one 
 
+> In case you don't get one option exactly, select the closest one 
+
 For the homework, we'll be working with the _green_ taxi dataset located here:
 
+`https://github.com/DataTalksClub/nyc-tlc-data/releases/tag/green/download`
 `https://github.com/DataTalksClub/nyc-tlc-data/releases/tag/green/download`
 
 ### Assignment
@@ -192,7 +195,7 @@ Once the dataset is loaded, what's the shape of the data?
 
 ## Question 2. Data Transformation
 
-Upon filtering the dataset where the passenger count is equal to 0 _or_ the trip distance is equal to zero, how many rows are left?
+Upon filtering the dataset where the passenger count is greater than 0 _and_ the trip distance is greater than zero, how many rows are left?
 
 * 544,897 rows
 * 266,855 rows
