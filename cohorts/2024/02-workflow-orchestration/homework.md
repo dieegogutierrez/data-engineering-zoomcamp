@@ -2,11 +2,8 @@
 
 > In case you don't get one option exactly, select the closest one 
 
-> In case you don't get one option exactly, select the closest one 
-
 For the homework, we'll be working with the _green_ taxi dataset located here:
 
-`https://github.com/DataTalksClub/nyc-tlc-data/releases/tag/green/download`
 `https://github.com/DataTalksClub/nyc-tlc-data/releases/tag/green/download`
 
 ### Assignment
