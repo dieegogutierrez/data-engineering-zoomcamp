@@ -58,9 +58,8 @@ def web_to_gcs(year, service):
         upload_to_gcs(BUCKET, f"{service}/{file_name}", file_name)
         print(f"GCS: {service}/{file_name}")
 
-
-web_to_gcs('2019', 'green')
-web_to_gcs('2020', 'green')
+web_to_gcs('2022', 'green')
+# web_to_gcs('2019', 'green')
+# web_to_gcs('2020', 'green')
 # web_to_gcs('2019', 'yellow')
 # web_to_gcs('2020', 'yellow')
-
