@@ -63,17 +63,50 @@ The [linked colab notebook](https://colab.research.google.com/drive/1Te-AT0lfh0G
 #### Question 1: What is the sum of the outputs of the generator for limit = 5?
 - **A**: 10.23433234744176
 - **B**: 7.892332347441762
-- **C**: 8.382332347441762
+- **C**: 8.382332347441762 - THIS ANSWER
 - **D**: 9.123332347441762
+
+```python
+def square_root_generator(limit):
+    n = 1
+    while n <= limit:
+        yield n ** 0.5
+        n += 1
+
+# Question 1:
+limit = 5
+generator = square_root_generator(limit)
+sum = 0
+for sqrt_value in generator:
+    sum += sqrt_value
+    
+print(f'The sum of the outputs of the generator for limit = 5 is: {sum}')
+```
 
 #### Question 2: What is the 13th number yielded by the generator?
 - **A**: 4.236551275463989
-- **B**: 3.605551275463989
+- **B**: 3.605551275463989 - THIS ANSWER
 - **C**: 2.345551275463989
 - **D**: 5.678551275463989
 
+```python
+def square_root_generator(limit):
+    n = 1
+    while n <= limit:
+        yield n ** 0.5
+        n += 1
+
+# Question 2:
+limit = 13
+generator = square_root_generator(limit)
+for sqrt_value in generator:
+    value = sqrt_value
+
+print(f'The 13th number yielded by the generator is: {value}')
+```
+
 #### Question 3: Append the 2 generators. After correctly appending the data, calculate the sum of all ages of people.
-- **A**: 353
+- **A**: 353 - THIS VALUE - CHECK [NOTEBOOK](dlt_resources/homework_starter.ipynb)
 - **B**: 365
 - **C**: 378
 - **D**: 390
@@ -82,7 +115,7 @@ The [linked colab notebook](https://colab.research.google.com/drive/1Te-AT0lfh0G
 - **A**: 205
 - **B**: 213
 - **C**: 221
-- **D**: 230
+- **D**: 230 - NEAREST VALUE TO 266 - CHECK [NOTEBOOK](dlt_resources/homework_starter.ipynb)
 
 Submit the solution here: https://courses.datatalks.club/de-zoomcamp-2024/homework/workshop1
 
