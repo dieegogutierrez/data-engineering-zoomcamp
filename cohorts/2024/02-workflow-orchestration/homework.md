@@ -78,7 +78,7 @@ def test_output(output, *args) -> None:
 ```
 
 - Add a transformer block and perform the following:
-  - Remove rows where the passenger count is equal to 0 _or_ the trip distance is equal to zero.
+  - Remove rows where the passenger count is equal to 0 _and_ the trip distance is equal to zero.
   - Create a new column `lpep_pickup_date` by converting `lpep_pickup_datetime` to a date.
   - Rename columns in Camel Case to Snake Case, e.g. `VendorID` to `vendor_id`.
   - Add three assertions:
