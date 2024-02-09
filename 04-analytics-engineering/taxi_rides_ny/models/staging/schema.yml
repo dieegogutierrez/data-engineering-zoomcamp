@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: staging
+    database: ny-rides-diegogutierrez
+    schema: ny_rides_all
+
+    tables:
+      - name: green_tripdata
+      - name: yellow_tripdata
