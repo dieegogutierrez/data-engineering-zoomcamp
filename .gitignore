@@ -18,3 +18,4 @@ serving_dir
 *.csv
 *.duckdb
 *.wal
+!taxi_zone_lookup.csv
