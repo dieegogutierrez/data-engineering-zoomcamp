@@ -112,10 +112,10 @@ print(f'The 13th number yielded by the generator is: {value}')
 - **D**: 390
 
 #### Question 4: Merge the 2 generators using the ID column. Calculate the sum of ages of all the people loaded as described above.
-- **A**: 205
-- **B**: 213
-- **C**: 221
-- **D**: 230 - NEAREST VALUE TO 266 - CHECK [NOTEBOOK](dlt_resources/homework_starter.ipynb)
+- **A**: 215
+- **B**: 266
+- **C**: 241
+- **D**: 258
 
 Submit the solution here: https://courses.datatalks.club/de-zoomcamp-2024/homework/workshop1
 
