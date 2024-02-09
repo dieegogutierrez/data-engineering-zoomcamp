@@ -203,5 +203,6 @@ vars:
 - Under Execution settings, tick boxes Generate docs and Run source
 - Under Schedule choose a schedule
 - Save it and run to trigger it, it is also possible to trigger it by api so is possible to trigger it using an orchestrator
+- It will use the main branch for deployment, therefore is necessary to merge branch before deployment
 
 
