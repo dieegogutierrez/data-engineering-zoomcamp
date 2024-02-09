@@ -113,7 +113,7 @@ print(f'The 13th number yielded by the generator is: {value}')
 
 #### Question 4: Merge the 2 generators using the ID column. Calculate the sum of ages of all the people loaded as described above.
 - **A**: 215
-- **B**: 266
+- **B**: 266 - THIS VALUE - CHECK [NOTEBOOK](dlt_resources/homework_starter.ipynb)
 - **C**: 241
 - **D**: 258
 
