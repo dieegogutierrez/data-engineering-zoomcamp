@@ -203,6 +203,18 @@ vars:
 - Under Execution settings, tick boxes Generate docs and Run source
 - Under Schedule choose a schedule
 - Save it and run to trigger it, it is also possible to trigger it by api so is possible to trigger it using an orchestrator
-- It will use the main branch for deployment, therefore is necessary to merge branch before deployment
+- It will use the main branch for deployment, therefore is necessary to change on Deploy>Environments>Settings>Use custom branch
+- On project settings, under artifacts add the job in Documentation and Source freshness
 
+### CONTINUOS INTEGRATION - CI
+- Deploy>Jobs>Continuos Integration job
+- If triggered by pull request is not available change the repository connection. Integrate github/dbt.
+
+### DATA STUDIO/LOOKER STUDIO
+- CREATE>DATA SOURCE>BIG QUERY
+- Choose prod and fact_trips then Connect
+- Check for the aggregations, its possible to create or delete, insert description, create metrics
+- There is also other options such as data freshness
+- Create Report
+- Add chart, add control
 
