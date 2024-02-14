@@ -218,3 +218,5 @@ vars:
 - Create Report
 - Add chart, add control
 
+### METABASE
+- Use metabase if you are using postgres and developing locally.
