@@ -36,7 +36,7 @@ sources:
       - name: yellow_tripdata
 ```
 - After saving it, click on 'Generate model' above table name
-- Tipe: "dbt build"
+- Type: "dbt build"
 
 ### MACROS
 - Create in macros folder a sql file get_payment_type_description.sql
@@ -200,9 +200,7 @@ vars:
 - Add Environment name(production) and Dataset(prod)
 - Create job>Deploy job
 - Add Job name(Nightly), Description(This is where data hits production)
+- Under command: dbt build --vars '{"is_test_run": false}'
 - Under Execution settings, tick boxes Generate docs and Run source
 - Under Schedule choose a schedule
 - Save it and run to trigger it, it is also possible to trigger it by api so is possible to trigger it using an orchestrator
-- It will use the main branch for deployment, therefore is necessary to merge branch before deployment
-
-
