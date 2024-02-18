@@ -7,7 +7,7 @@ This means that in this homework we use the following data [Datasets list](https
 * Green taxi data - Years 2019 and 2020 
 * fhv data - Year 2019. 
 
-- Load the data with this [Python Script](04-analytics-engineering/web_to_bigquery.py)
+- Load the data with this [Python Script](web_to_bigquery.py)
 
 We will use the data loaded for:
 
