@@ -35,12 +35,17 @@ docker-compose up
 
 Now let's find out the version of redpandas. 
 
+```bash
+docker-compose exec redpanda-1 bash
+```
+
 For that, check the output of the command `rpk help` _inside the container_. The name of the container is `redpanda-1`.
 
 Find out what you need to execute based on the `help` output.
 
 What's the version, based on the output of the command you executed? (copy the entire version)
 
+- v22.3.5 (rev 28b2443)
 
 ## Question 2. Creating a topic
 
@@ -53,6 +58,8 @@ Read the output of `help` and based on it, create a topic with name `test-topic`
 
 What's the output of the command for creating a topic?
 
+TOPIC       STATUS
+test-topic  OK
 
 ## Question 3. Connecting to the Kafka server
 
@@ -93,6 +100,7 @@ producer.bootstrap_connected()
 Provided that you can connect to the server, what's the output
 of the last command?
 
+- True
 
 ## Question 4. Sending data to the stream
 
@@ -117,7 +125,9 @@ print(f'took {(t1 - t0):.2f} seconds')
 
 How much time did it take? Where did it spend most of the time?
 
-* Sending the messages
+- 0.51 seconds
+
+* Sending the messages - THIS ANSWER
 * Flushing
 * Both took approximately the same amount of time
 
@@ -172,6 +182,7 @@ to `iterrows`
 * How much time in seconds did it take? (You can round it to a whole number)
 * Make sure you don't include sleeps in your code
 
+- 53 seconds
 
 ## Creating the PySpark consumer
 
@@ -272,6 +283,7 @@ green_stream = green_stream \
 
 How does the record look after parsing? Copy the output 
 
+Row(lpep_pickup_datetime='2019-10-01 00:26:02', lpep_dropoff_datetime='2019-10-01 00:39:58', PULocationID=112, DOLocationID=196, passenger_count=1.0, trip_distance=5.88, tip_amount=0.0)
 
 ### Question 7: Most popular destination
 
@@ -305,6 +317,7 @@ query.awaitTermination()
 
 Write the most popular destanation. (You will need to re-send the data for this to work)
 
+- DOLocationID = 74
 
 ## Submitting the solutions
 
